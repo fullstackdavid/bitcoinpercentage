@@ -1,0 +1,29 @@
+<html>
+    <head>
+	<title>Bitcoin Percentage</title>
+
+        <script>
+            function calculate()
+            {
+                p = document.getElementById("p").value;
+               /*  n = document.getElementById("n").value;
+                r = document.getElementById("r").value; */
+                result = document.getElementById("result");
+                
+                result.innerHTML = "You have " + (p*100/17333450) + "% of all bitcoins currently in circulation";
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Bitcoin percentage calculation</h1>
+
+        Amount of bitcoins you have: <input id="p"><br/>
+       <!--  Current rate : <input id="r"><br/>
+        No. of Years: <input id="n"><br/> -->
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="result"></p>
+    </body>
+</html>
